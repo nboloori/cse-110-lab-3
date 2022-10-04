@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <h1>Cool Team First Meeting</h1>
+            <h1><span id = "title-span">Cool Team First Meeting</span></h1>
             <h2>October 3, 2022</h2>
         </header>
         <nav>
@@ -37,13 +37,15 @@
                 <hr>
                 <h3>Unfinished Business</h3>
                 <p>We took a video of the NBA preseason game. It's still up in the air whether or not the Seattle Supersonics will come back.</p>
-                <video controls width = "500">
-                    <source src = "video.mp4">
-                </video> 
-                <br>
-                <audio controls>
-                    <source src = "video.mp4">
-                </audio>
+                <div id = "multimedia-div">
+                    <video controls width = "500">
+                        <source src = "video.mp4">
+                    </video> 
+                    <br>
+                    <audio controls>
+                        <source src = "video.mp4">
+                    </audio>
+                </div>
                 <hr>
                 <h3>New Business</h3>
                 <p>Plan for next quarter presented through a diagram:</p>
@@ -78,6 +80,7 @@
                             <option value = "Choice 3">Choice 3</option>
                         </select>
                         <br>
+                        <button>Submit Form (But Not Really Though)</button>
                     </fieldset>
                 </form>
             </section>
