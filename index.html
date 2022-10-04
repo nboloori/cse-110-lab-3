@@ -8,7 +8,7 @@
     <body>
         <header>
             <h1>Cool Team First Meeting</h1>
-            <h3>October 3, 2022</h3>
+            <h2>October 3, 2022</h2>
         </header>
         <nav>
             <ul>
@@ -58,18 +58,20 @@
                 <h2>Random Form</h2>
                 <form>
                     <fieldset>
+                        <legend>Your random information</legend>
                         <label for = "checkbox">Checkbox</label><input type = "checkbox" id = "checkbox"><br>
                         <input type = "radio" id = "radio"><label for = "radio">Radio</label><br>
-                        <input type = "text" placeholder = "text"> <br>
-                        <input type = "date"><br>
-                        <input list = "suggestions">
+                        <label for = "text">Text: </label><input type = "text" placeholder = "text" id = "text"> <br>
+                        <label for = "date">Date: </label><input type = "date" id = "date"><br>
+                        <label for = "suggestions-input">Datalist input: </label><input list = "suggestions" id = "suggestions-input">
                         <datalist id = "suggestions"> <!-- can accept text as well as dropdown selection --> <!-- not displaying for some reason -->
                             <option value = "Suggestion 1">Suggestion 1</option>
                             <option value = "Suggestion 2">Suggestion 2</option>
                             <option value = "Suggestion 3">Suggestion 3</option>
                         </datalist> 
                         <br>
-                        <textarea>Default value</textarea><br>
+                        <label for = "textarea">Textarea: </label>
+                        <textarea id ="textarea">Default value</textarea><br>
                         <select>
                             <option value = "Choice 1">Choice 1</option>
                             <option value = "Choice 2">Choice 2</option>
