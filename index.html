@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Meeting Minutes</title>
         <meta charset = "utf-8" />
-        <link rel = "" /> <!-- TODO -->
+        <link href = "favicon.ico" rel="icon" type="image/x-icon" />
     </head>
     <body>
         <header>
@@ -29,27 +29,29 @@
                     </ol>
                 <hr />
                 <h3>Agenda</h3>
-                    <ol>
-                        <li>Go over unfinished business</li>
-                        <li>Go over new business</li>
-                        <li>Miscellaneous</li>
-                    </ol>
+                <ol>
+                    <li>Go over unfinished business</li>
+                    <li>Go over new business</li>
+                    <li>Miscellaneous</li>
+                </ol>
                 <hr />
                 <h3>Unfinished Business</h3>
-                    <p>Mike got himself in trouble again</p>
-                    <video></video> <!-- TODO -->
-                    <audio></audio> <!-- TODO -->
+                <p>We took a video of the NBA preseason game. It's still up in the air whether or not the Seattle Supersonics will come back.</p>
+                <video controls width = "500">
+                    <source src = "video.mp4">
+                </video> 
+                <br />
+                <audio controls>
+                    <source src = "video.mp4">
+                </audio>
                 <hr />
                 <h3>New Business</h3>
-                    <p>Plan for next quarter presented through a diagram:</p>
-                    <img src = "graph.png" height = "200" />
-                <b></b> <!-- draw the user's attention to element's content, not for styling purposes -->
-                <strong></strong> <!-- used for styling purposes to emmphasize a point -->
-                <i></i> <!-- sets text off from its peers -->
-                <em></em> <!-- used for stress emphasis, can be nested and more nesting means more importance -->
+                <p>Plan for next quarter presented through a diagram:</p>
+                <img src = "graph.png" width = "500" />
+                <p>We need to make a) <b>make more money</b> and b) <b>become swaggier</b>. <i>Swag</i> is the state of being ultra cool. We <em>need</em> to finish the project as soon as possible. If nothing else remember this: <strong>swag makes you money but money doesn't make you swaggy</strong>.</p>
                 <details>
                     <summary>Super secret plans</summary>
-                    <p>Make cool s@#t</p>
+                    <p>The super secret plan is to make cool s@#t.</p>
                 </details>
             </section>
             <section id = "form-section">
@@ -60,13 +62,14 @@
                         <input type = "radio" name = "radio" /><label for = "radio">Radio</label><br />
                         <input type = "text" placeholder = "text" /> <br />
                         <input type = "date" /><br />
-                        <textarea>Default value</textarea><br />
-                        <datalist> <!-- can accept text as well as dropdown selection --> <!-- not displaying for some reason -->
+                        <input list = "suggestions">
+                        <datalist id = "suggestions"> <!-- can accept text as well as dropdown selection --> <!-- not displaying for some reason -->
                             <option value = "Suggestion 1">Suggestion 1</option>
                             <option value = "Suggestion 2">Suggestion 2</option>
                             <option value = "Suggestion 3">Suggestion 3</option>
                         </datalist> 
                         <br />
+                        <textarea>Default value</textarea><br />
                         <select>
                             <option value = "Choice 1">Choice 1</option>
                             <option value = "Choice 2">Choice 2</option>
@@ -80,6 +83,5 @@
                 <p>© Secret Form Organization</p>
             </footer>
         </main>
-        <footer></footer> <!-- look more into footer use case -->
     </body> 
 </html>
