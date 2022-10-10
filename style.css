@@ -1,0 +1,141 @@
+@media (max-width: 500px) {
+    #minutes-section 
+    {
+        background-color: red;
+    }
+}
+
+#minutes-section
+{
+    width: 500px;
+}
+
+#date 
+{
+    margin-bottom: 0px;
+}
+
+#multimedia-div 
+{
+    position: relative;
+    left: 50px;
+    width: 800px;
+    background-color: blueviolet;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    height: 15cm;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+#form-section
+{
+    height: 50vh;
+    min-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+}
+
+header 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5px;
+}
+
+body 
+{
+    /* Make all text in the body helvetica */
+    font-family: Helvetica, Arial, sans-serif;
+    margin: auto;
+}
+
+h1 
+{
+    color: orange;
+    font-size: 30pt;
+    position: relative;
+    margin-top: 0px;
+}
+
+h2 
+{
+    color: #7f00ff;
+    text-decoration: orange wavy underline;
+}
+
+h3
+{
+    color: rgba(220, 20, 60, 1);
+}
+
+ul > li
+{
+    display: inline-block;
+}
+
+a
+{
+    color: hsl(74, 73%, 20%, 1);
+    text-decoration: overline underline 2px;
+    display: inline-block;
+}
+
+a:hover 
+{
+    color: blue;
+}
+
+img 
+{
+    margin: 10px 20px 30px 40px;
+}
+
+details 
+{
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+summary
+{
+    padding: 10px 20px 10px 20px;
+    width: 50ch;
+    text-align: center;
+    background-color: aqua;
+    border-style: dashed;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+form 
+{
+    background-color: bisque;
+    width: 90vw;
+    max-width: 600px;
+    display: block;
+}
+
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    background-color: red;
+    opacity: 0.8;
+    width: 100vw;
+}
+
+button:active
+{
+    background-color: coral;
+}
