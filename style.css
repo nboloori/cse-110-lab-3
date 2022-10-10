@@ -5,6 +5,7 @@
     }
 }
 
+/* ids */
 #minutes-section
 {
     width: 500px;
@@ -50,11 +51,33 @@ header
     gap: 5px;
 }
 
+/* classes */
+.general-text
+{
+    color: purple;
+}
+
+p.general-text 
+{
+    font-weight: bold;
+}
+
+/* elements */
+*
+{
+    font-style: oblique;
+}
+
 body 
 {
     /* Make all text in the body helvetica */
     font-family: Helvetica, Arial, sans-serif;
     margin: auto;
+}
+
+body p
+{
+    text-align: center;
 }
 
 h1 
@@ -81,6 +104,11 @@ ul > li
     display: inline-block;
 }
 
+ul, ol 
+{
+    margin-left: -20px;
+}
+
 a
 {
     color: hsl(74, 73%, 20%, 1);
@@ -91,6 +119,11 @@ a
 a:hover 
 {
     color: blue;
+}
+
+video ~ audio
+{
+    box-shadow: 5px 5px 5px yellow;
 }
 
 img 
@@ -110,7 +143,7 @@ summary
 {
     padding: 10px 20px 10px 20px;
     width: 50ch;
-    text-align: center;
+    text-align: right;
     background-color: aqua;
     border-style: dashed;
     border-color: black;
@@ -133,6 +166,16 @@ footer
     background-color: red;
     opacity: 0.8;
     width: 100vw;
+}
+
+label + input
+{
+    color: teal;
+}
+
+input[type="text"]
+{
+    background-color: aquamarine;
 }
 
 button:active
