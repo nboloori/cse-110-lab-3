@@ -4,11 +4,22 @@
         <title>Meeting Minutes</title>
         <meta charset = "utf-8">
         <link href = "favicon.ico" rel="icon" type="image/x-icon">
+        <link href = "style.css" rel="stylesheet" type="text/css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+        <style>
+            h1
+            {
+                font-family: "Alkalami", serif;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1><span id = "title-span">Cool Team First Meeting</span></h1>
-            <h2>October 3, 2022</h2>
+            <!-- inline style -->
+            <h1 style = "text-decoration: underline;"><span id = "title-span">Cool Team First Meeting</span></h1>
+            <h2 id="date">October 3, 2022</h2>
         </header>
         <nav>
             <ul>
@@ -41,7 +52,6 @@
                     <video controls width = "500">
                         <source src = "video.mp4">
                     </video> 
-                    <br>
                     <audio controls>
                         <source src = "video.mp4">
                     </audio>
@@ -66,7 +76,7 @@
                         <label for = "text">Text: </label><input type = "text" placeholder = "text" id = "text"> <br>
                         <label for = "date">Date: </label><input type = "date" id = "date"><br>
                         <label for = "suggestions-input">Datalist input: </label><input list = "suggestions" id = "suggestions-input">
-                        <datalist id = "suggestions"> <!-- can accept text as well as dropdown selection --> <!-- not displaying for some reason -->
+                        <datalist id = "suggestions"> 
                             <option value = "Suggestion 1">Suggestion 1</option>
                             <option value = "Suggestion 2">Suggestion 2</option>
                             <option value = "Suggestion 3">Suggestion 3</option>
